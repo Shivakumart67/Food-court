@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Food Court</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/601/601635.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="container">
+      <div style="margin-left: 20px">
+        <h1>Food Court</h1>
+      </div>
+      <div id="form-btn">
+        <button onclick="location.href = 'forms.html'">Forms</button>
+      </div>
+      <div>
+        <button onclick="location.href = 'contribute.html'" id="nav-btn">
+          Contribute
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <div id="input-container">
+        <input
+          autofocus
+          type="text"
+          placeholder="Enter a Dish Name"
+          name="Food-Name"
+          id="input-name"
+        />
+        <button id="btn">Save</button>
+        <button id="reset">Reset</button>
+        <div class="d-flex" id="count"></div>
+      </div>
+      <div id="content">
+        <ul id="food-container"></ul>
+        <div id="image">
+          <img
+            src="https://img.freepik.com/premium-vector/continuous-one-line-drawing-young-boy-waiting-eating-holding-spoon-fork-hand-eating-activity-concept-single-line-draw-design-vector-graphic-illustration_638785-382.jpg"
+            alt="Food Waiting image"
+          />
+          <h6
+            style="
+              color: gray;
+              z-index: 30;
+              margin-left: 50%;
+              transform: translate(-50%);
+              margin-top: -45px;
+            "
+          >
+            Add Your favourite Foods !
+          </h6>
+        </div>
+      </div>
+      <div id="next-container">
+        <input type="text " placeholder="Enter The Text" />
+        <input type="submit" name="" id="" />
+      </div>
+      <button>Remove</button>
+      <form id="terms-container">
+        <input type="text" id="terms-input" placeholder="Enter a Name" />
+        <br />
+
+        <label for="terms-check">
+          <input type="checkbox" name="terms" id="terms-check" />
+          I accept the
+          <a onclick="event.preventDefault()" href=""
+            >terms and conditions</a
+          > </label
+        ><br />
+        <input type="submit" name="" id="terms-btn" />
+      </form>
+    </main>
+    <footer>
+      <div id="left-container">
+        <div class="fname">
+          <i
+            style="color: black; margin-right: 5px"
+            class="fa-solid fa-location-dot"
+          ></i>
+          Bangalore Vijaynagar-577523
+        </div>
+        <div class="fname">
+          <i
+            style="color: black; margin-right: 5px"
+            class="fa-solid fa-phone"
+          ></i>
+          7337744420
+        </div>
+        <div class="fname">
+          <a href="">
+            <i
+              style="color: black; margin-right: 5px"
+              class="fa-solid fa-envelope"
+            ></i>
+            shivakumar67@gmail.com</a
+          >
+        </div>
+      </div>
+      <div id="right-container">
+        <div class="head">Contacut Us</div>
+        <div class="fcont">Please Give Your Feedback</div>
+        <div class="logos">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
